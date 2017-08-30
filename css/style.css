@@ -48,7 +48,7 @@
 /* BASICS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+footer, header, nav, section {
     display: block;
 }
 html {
@@ -75,13 +75,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
         border-top:4px solid #006fb1;
 }
+section {
+    padding:1em;
+}
 main {
     max-width: 80em;
     margin: 0 auto;
     display:block;
-}
-section {
-    padding:1em;
 }
 button, input, optgroup, select, textarea {
     font-family: inherit;
@@ -314,8 +314,9 @@ img.centered {
     background: linear-gradient(#006fb1, #005f98 );
     color: #e2e2e2;
     font-size: 1.25em;
-    margin: auto ;
-    margin-top:1.25em;  margin-bottom:1.75em;
+    margin: auto;
+    margin-top:1.25em;
+    margin-bottom:1.75em;
     padding: 0.5em 1em;
     border: none;
     width: auto;
@@ -327,11 +328,9 @@ img.centered {
     box-shadow: #444 1px 1px 2px;
     border-radius: 50px;
 }
-
 button[disabled], input[disabled] {
     cursor: default
 }
-
 .button:hover, button:hover, input[type=submit]:hover{
     background: #004f9e;
     background: linear-gradient(#0286d4, #005f98);
@@ -393,7 +392,6 @@ button.cta:hover, {
 .fp {
     margin:auto;
 }
-
 @media only screen and (min-width: 50em) {
     .button.cta_fp {
         display: inline-block;
@@ -404,7 +402,6 @@ button.cta:hover, {
         margin-top:2em;
     }
 }
-
 /* FORMS 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -412,12 +409,11 @@ button.cta:hover, {
     outline: none;
 }
 label {
-    display: inline-block;
-    margin: 0.5rem auto 0.25em;
+    display:block;
+    margin: 0.5rem 0.25em;
     font-weight: bold;
-    margin-right: 1em;
 }
-input[type=text], input[type=email], input[type=tel], textarea.message {
+input[type=text], input[type=email], input[type=tel]{
     display: block;
     font-family: inherit;
     font-size: 100%;
@@ -523,7 +519,6 @@ nav li a:hover {
     line-height: 1;
     text-shadow:#444 1px 1px 1px;
 }
-
 .title_subheader {
     font-size: .7em;
     float:none;
@@ -532,7 +527,6 @@ nav li a:hover {
     letter-spacing: -0.06em;
     font-weight: 400;
     }
-
 @media only screen and (min-width: 50em) {
 .title {
     font-size: 4em;
@@ -542,7 +536,6 @@ nav li a:hover {
     line-height: 1;
     text-shadow:#444 1px 1px 1px;
 }
-
 .title_subheader {
     font-size: 1.5em;
     letter-spacing: -0.06em;
@@ -553,7 +546,6 @@ nav li a:hover {
 }
 /* COLUMNS 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .col_one_third {
     width: 100%;
 /*    padding-left: 0.9375em;
@@ -565,7 +557,6 @@ nav li a:hover {
     padding-right: 0.9375em;*/
 
 }
-
 @media print, screen and (min-width: 50em){
     .col_one_third {
         width: 33%;

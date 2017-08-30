@@ -53,27 +53,33 @@
 	<section>
 		<h1>Contact Us</h1>
 		<div class="col_one_half">
+				<p>Enter the detailed problem along with your contact information and receive a call back within the hour.</p>
 			<form name="contactform" method="post" action="f_process.php" onsubmit="return validate.check(this)">
-		
-					<p>Enter the detailed problem along with your contact information and receive a call back within the hour.</p>
-						
-								<label for="Full_Name" class="required">Full Name
-					<input type="text" name="Full_Name" id="Full_Name" maxlength="80" class="full_name"></label>
-			
-					<label for="Email_Address" class="required">Email Address
-					<input type="email" name="Email_Address" id="Email_Address" maxlength="100" class="email"></label>
-		
-					<label for="Telephone_Number" class="required">Phone Number
-					<input type="tel" name="Telephone_Number" id="Telephone_Number" maxlength="80" class="telephone"></label>
-
-					<label for="Your_Message" class="required">Message
-					<textarea name="Your_Message" id="Your_Message" maxlength="1000" class="message"></textarea></label>
-					<input type="submit" value="Submit" class="text-right">
-						</form>
-			</form>
-		
+				<table width="5em">
+					<tr>
+						<td valign="top"><label class="required" for="Full_Name">Name</label></td>
+						<td valign="top"><input id="Full_Name" maxlength="80" name="Full_Name" style="width:300px" type="text"></td>
+					</tr>
+					<tr>
+						<td valign="top"><label class="required" for="Email_Address">Email</label></td>
+						<td valign="top"><input id="Email_Address" maxlength="100" name="Email_Address" style="width:300px" type="email"></td>
+					</tr>
+					<tr>
+						<td valign="top"><label class="required" for="Telephone_Number">Phone #</label></td>
+						<td valign="top"><input id="Telephone_Number" maxlength="80" name="Telephone_Number" style="width:300px" type="tel"></td>
+					</tr>
+					<tr>
+						<td valign="top"><label class="required" for="Your_Message">Message</label></td>
+						<td valign="top">
+						<textarea id="Your_Message" maxlength="1000" name="Your_Message" style="width:300px;height:120px"></textarea>
+						<input type="submit" class="right" value="Submit">
+						</td>
+					</tr>
+				
+				</table>
+				</form>
 		</div>
-		<div class="col_one_half">
+		<div class="col_one_half text-center">
 		<h2 class="text-center"><a href="tel://1-352-537-6002"><strong>(352) 537-6002</strong></a><br><small>or</small><br><a href="tel://1-352-653-2100"><strong>(352) 653-2100</strong></a></h2>
 		<img src="img/greenstove.png" alt="Citywide Appliance Services North Central FL">
 	    </div>
